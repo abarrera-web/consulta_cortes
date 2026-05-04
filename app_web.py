@@ -59,7 +59,7 @@ if st.button("🚀 Calcular Optimización"):
         else:
             packer = newPacker(rotation=True)
             packer.add_bin(hw, hh, count=100)
-            packer.add_rect(pw + kerf, ph + kerf, count=int(cant))
+            packer.add_rect(float(pw + kerf), float(ph + kerf), count=int(cant))
             packer.pack()
             
             hojas = {}
