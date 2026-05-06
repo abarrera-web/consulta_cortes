@@ -32,20 +32,20 @@ with st.sidebar:
     if tipo == "Placa (2D)":
         hw = st.number_input("Ancho Hoja (cm):", value=122.0)
         hh = st.number_input("Alto Hoja (cm):", value=244.0)
-        pw = st.number_input("Ancho Pieza (cm):", value=60.0)
-        ph = st.number_input("Alto Pieza (cm):", value=50.0)
-        cant = st.number_input("Cantidad total piezas:", value=1, min_value=1, step=1)
+        pw = st.number_input("Ancho Pieza (cm):", value=)
+        ph = st.number_input("Alto Pieza (cm):", value=)
+        cant = st.number_input("Cantidad total piezas:", value=, min_value=1, step=1)
     
     elif tipo == "Marco (45°)":
-        bl = st.number_input("Largo de la Barra (cm):", value=610.0)
-        ml = st.number_input("Largo de la Caja (cm):", value=100.0)
-        ma = st.number_input("Ancho de la Caja (cm):", value=80.0)
+        bl = st.number_input("Largo de la Barra (cm):", value=)
+        ml = st.number_input("Largo de la Caja (cm):", value=)
+        ma = st.number_input("Ancho de la Caja (cm):", value=)
         offset = st.number_input("Offset p/ 45° (cm):", value=5.0)
         cant_marcos = st.number_input("Número de Cajas:", value=1, min_value=1, step=1)
         
     else: # Tramos 1D
-        bl = st.number_input("Largo de la Barra (cm):", value=610.0)
-        tl = st.number_input("Medida del tramo (cm):", value=5.0)
+        bl = st.number_input("Largo de la Barra (cm):", value=)
+        tl = st.number_input("Medida del tramo (cm):", value=)
         cant_tramos = st.number_input("Cantidad de tramos:", value=1, min_value=1, step=1)
 
 # --- 3. BOTÓN Y LÓGICA ---
